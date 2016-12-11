@@ -1,1 +1,0 @@
-{"version":3,"sources":["server/routes/user.js"],"names":["router","Router","route","post","syncUser","sync"],"mappings":";;;;;;AAAA;;;;AACA;;;;AACA;;;;AACA;;;;;;AAEA,IAAMA,SAAS,kBAAQC,MAAR,EAAf,C,CAAiC;;AAEjCD,OAAOE,KAAP,CAAa,OAAb;AACA;AADA,CAEEC,IAFF,CAEO,iCAAS,0BAAgBC,QAAzB,CAFP,EAE2C,eAASC,IAFpD;;kBAIeL,M","file":"user.js","sourceRoot":"../../../../.."}

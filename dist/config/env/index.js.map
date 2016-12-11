@@ -1,1 +1,0 @@
-{"version":3,"sources":["config/env/index.js"],"names":["env","db","host","port","user","password"],"mappings":";;;;;kBAAe;AACdA,MAAK,aADS;AAEdC,KAAI;AACHC,QAAM,kBADH;AAEHC,QAAM,IAFH;AAGHC,QAAM,WAHH;AAIHC,YAAU;AAJP,EAFU;AAQdF,OAAM;AARQ,C","file":"index.js","sourceRoot":"../../../../.."}

@@ -1,1 +1,0 @@
-{"version":3,"sources":["config/winston.js"],"names":["logger","Logger","transports","Console","json","colorize"],"mappings":";;;;;;AAAA;;;;;;AAEA,IAAMA,SAAS,IAAK,kBAAQC,MAAb,CAAqB;AACnCC,aAAY,CACX,IAAK,kBAAQA,UAAR,CAAmBC,OAAxB,CAAiC;AAChCC,QAAM,IAD0B;AAEhCC,YAAU;AAFsB,EAAjC,CADW;AADuB,CAArB,CAAf;;kBASeL,M","file":"winston.js","sourceRoot":"../../.."}
