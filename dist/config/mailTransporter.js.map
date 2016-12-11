@@ -1,0 +1,1 @@
+{"version":3,"sources":["config/mailTransporter.js"],"names":["auth","mail","createTransport","service"],"mappings":";;;;;;AAAA;;;;AACA;;;;AACA;;;;;;IAEQA,I,GAAS,cAAOC,I,CAAhBD,I;kBACO,qBAAWE,eAAX,CAA2B,uCAAc;AACvDC,UAAS,OAD8C;AAEvDH;AAFuD,CAAd,CAA3B,C","file":"mailTransporter.js","sourceRoot":"../../.."}
