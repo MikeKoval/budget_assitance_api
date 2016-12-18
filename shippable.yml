@@ -39,4 +39,10 @@ integrations:
         - "@mike.koval"
       on_success: always
       on_failure: always
+    - integrationName: Email
+      type: email
+      recipients:
+        - "mykhailo.koval@eliftech.com"
+      on_success: always
+      on_failure: always
 
