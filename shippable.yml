@@ -1,0 +1,33 @@
+language: node_js
+
+node_js:
+  - 5.6.0
+
+services:
+  - mongo
+
+before_install:
+  - npm install -g gulp mimer babel-cli
+
+install:
+  - npm install
+
+# Make folders for the reports, and create the SQL db
+before_script:
+  - mkdir -p shippable/testresults
+  - mkdir -p shippable/codecoverage
+
+build:
+  ci:
+    - npm run build
+  post_ci:
+    # Develop should go to testing
+    - if [[ $BRANCH == develop ]]; then ENVIRONEMENT=testing; fi
+    # all release branches should go to staging
+    - if [[ $BRANCH == master/* ]]; then ENVIRONEMENT=production; fi
+    # feature branches shouldn't go anywhere, except somebody decided to deploy them to staging
+    #- if [[ $BRANCH == feature/brave-ci ]]; then ENVIRONEMENT=testing; fi
+    - DEPLOY_FILE=${ENVIRONEMENT}/budget_assistant_api-${BRANCH/\//-}-$BUILD_NUMBER.tar.gz
+    - echo $COMMIT > .commit-hash
+    - make create-dist
+    # check if branch not feature.
