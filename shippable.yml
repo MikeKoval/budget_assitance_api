@@ -30,3 +30,13 @@ build:
     - DEPLOY_FILE=${ENVIRONEMENT}/budget_assistant_api-${BRANCH/\//-}-$BUILD_NUMBER.tar.gz
     - echo $COMMIT > .commit-hash
     # check if branch not feature.
+
+integrations:
+  notifications:
+    - integrationName: Slack
+      type: slack
+      recipients:
+        - "@mike.koval"
+      on_success: always
+      on_failure: always
+    - integrationName: Email
